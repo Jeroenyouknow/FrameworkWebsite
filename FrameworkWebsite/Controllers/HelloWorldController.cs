@@ -23,5 +23,11 @@ namespace FrameworkWebsite.Controllers
 		{
 			return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
 		}
+
+		// GET: /HelloWorld/Test/ 
+		public string Test(string name, int ID = 25)
+		{
+			return HtmlEncoder.Default.Encode($"Hallo {name} leuk dat je er weer bent, ID: {ID}");
+		}
     }
 }
